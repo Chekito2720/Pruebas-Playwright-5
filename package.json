@@ -1,0 +1,30 @@
+{
+  "name": "practice-expandtesting-playwright",
+  "version": "1.0.0",
+  "description": "Suite de pruebas E2E + API con Playwright para https://practice.expandtesting.com",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:smoke": "playwright test tests/site-pages.spec.ts",
+    "test:api": "playwright test tests/api.spec.ts",
+    "test:auth": "playwright test tests/auth-login.spec.ts tests/auth-register.spec.ts",
+    "test:forms": "playwright test tests/forms.spec.ts",
+    "test:dynamic": "playwright test tests/dynamic.spec.ts",
+    "test:interactions": "playwright test tests/interactions.spec.ts",
+    "test:alerts": "playwright test tests/alerts-windows.spec.ts",
+    "test:tables": "playwright test tests/tables-dom.spec.ts",
+    "test:apps": "playwright test tests/apps.spec.ts",
+    "test:responsive": "playwright test tests/responsive.spec.ts",
+    "test:list": "playwright test --list",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
